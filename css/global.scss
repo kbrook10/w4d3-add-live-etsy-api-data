@@ -34,9 +34,6 @@ img {
 .hr-nav_bg{
     background-color: $colorWhite;
 }
-// #hr-nav-searchFor{
-//     width: 10px;
-// }
 
 .hr-nav-btm{
     padding-left: 35px;
@@ -54,6 +51,7 @@ img {
 }
 .hr-nav-search{
     padding-top: 10px;
+    width: 300px;
 }
 .hr-nav-btn{
     background-color: #34A8C4;
@@ -80,6 +78,10 @@ img {
 }
 
 //This is for the main section styling
+.mn-sec{
+    margin-left: 15px;
+    margin-right: 5px;
+}
 .mn-sec-sideBar-top, .mn-sec-sideBar-btm{
     border: 1px solid #E1E3DF;
     border-radius: 5px;
@@ -87,8 +89,12 @@ img {
     padding: 5px 10px;
     margin-bottom: 10px;
     li{
-        padding-top: 1.5px;
-        padding-bottom: 1.5px;
+        padding-top: 1.75px;
+        padding-bottom: 1.75px;
+        font-size: 90%;
+    }
+    label{
+        font-size: 90%;
     }
     a{
         text-decoration: none;
@@ -96,10 +102,6 @@ img {
     }
 }
 //Styling for the color blocks in the filter by color section of the sidebar
-.mn-sec-sideBar-fbc{
-
-}
-
 .boxProp{
     width: 20px;
     height: 20px;
@@ -132,34 +134,60 @@ img {
     background-color: #FFFFFF;
 }
 
-//Styling for the JS section
-.mn-sec-searchArea{
-    padding: 3px 15px;
+.inputBox{
+
 }
-.card  {
-    background: white;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
-    border-radius: 3px;
-    border: 1px solid lightgray;
-    margin-bottom: 30px;
-    width: 13vw;
-    image{
-        margin-bottom: 15px;
-    }
-    h6{
+.boxPrice{
+    width: 60px;
     display: inline-block;
-    margin-bottom: 3px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    padding: 3px;
-    // margin-top: 0px;
+    border-radius: 5px;
+}
+.boxPriceButton{
+    width: 50px;
+}
+
+//Styling for main body section right where the JS section is located
+
+    //Styling for main section right Top...
+    .mn-sec-searchArea{
+        padding: 3px 15px;
     }
-}
-.cardTextBox{
-    padding: 10px;
-    margin-bottom: 5px;
-}
+
+    //Styling for main section right Middle...
+    .mn-sec-RightMid{
+        margin-top: 10px;
+        width: 75vw;
+    }
+
+    .card  {
+        background: white;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+        border-radius: 3px;
+        border: 1px solid lightgray;
+        margin: 5px;
+        width: 200px;
+        image{
+            margin-bottom: 15px;
+        }
+        h6{
+        display: inline-block;
+        margin-bottom: 3px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        padding-left: 15px;
+        // margin-top: 0px;
+        }
+    }
+    .cardTextBox{
+        padding-bottom: 20px;
+        margin: 5px;
+    }
+    .priceColor{
+        color: rgb(120,192,66);
+    }
+    //Styling for main section right Bottom...
+
 
 //This is for the footer section styling

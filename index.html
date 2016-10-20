@@ -61,7 +61,7 @@
   <main>
     <!-- This STARTS the main body that has left side-bar (e.g. search & results) and a right search result images -->
     <br>
-    <div class="container">
+    <div class="container mn-sec">
       <div class="row">
         <div class="col-sm-3 text-left mn-sec-left">
           <p><strong><span class="text-capitalize">show</span> results for:</strong></p>
@@ -146,19 +146,31 @@
                 <input type="radio" name="optionsRadios10" id="optionsRadios10" value="option10">Over $30
               </label>
             </div>
+            <div class="inputBox">
+                <div class="input-group boxPrice">
+                  <input type="text" class="form-control" placeholder="Low" />
+                </div>&nbsp;
+                <span>to</span>&nbsp;
+                <div class="input-group boxPrice">
+                  <input type="text" class="form-control" placeholder="High" />
+                </div>&nbsp;
+                <button class="btn btn-default boxPrice boxPriceButton">
+                  <a href="#"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+                </button>
+            </div>
             <hr>
             <!-- End of Price section -->
             <!-- Start of Filter by color section Start -->
             <p><strong>Filter by color</strong></p>
             <div class="mn-sec-sideBar-fbc">
-              <div class="boxProp" id="box1"><a href="#"></a></div>
-              <div class="boxProp" id="box2"><a href="#"></a></div>
-              <div class="boxProp" id="box3"><a href="#"></a></div>
-              <div class="boxProp" id="box4"><a href="#"></a></div>
-              <div class="boxProp" id="box5"><a href="#"></a></div>
-              <div class="boxProp" id="box6"><a href="#"></a></div>
-              <div class="boxProp" id="box7"><a href="#"></a></div>
-              <div class="boxProp" id="box8"><a href="#"></a></div>
+              <a href="#"><div class="boxProp" id="box1"></div></a>
+              <a href="#"><div class="boxProp" id="box2"></div></a>
+              <a href="#"><div class="boxProp" id="box3"></div></a>
+              <a href="#"><div class="boxProp" id="box4"></div></a>
+              <a href="#"><div class="boxProp" id="box5"></div></a>
+              <a href="#"><div class="boxProp" id="box6"></div></a>
+              <a href="#"><div class="boxProp" id="box7"></div></a>
+              <a href="#"><div class="boxProp" id="box8"></div></a>
             </div>
             <hr>
             <!-- End of Filter by color section -->
@@ -188,19 +200,32 @@
             <!-- End of Ship to section -->
           </div>
         </div>
-        <div class="container-fluid">
-          <div id="searchResults" class="row col-sm-9">
-            <div class="col-sm-12">
-              <p>Did you mean the shop <a href="#">boardgames?</a></p>
-            </div>
-            <div class="row mn-sec-searchArea">
-              <div class="col-sm-6 text-left">
-                <p>All categories  “board games” (13,572 Results)</p>
+        <div class="container-fluid mn-sec-Right">
+          <div class="row col-sm-9">
+            <section class="mn-sec-RightTop">
+              <div class="row mn-sec-searchArea">
+                <div class="col-sm-12">
+                  <p>Did you mean the shop <a href="#">boardgames?</a></p>
+                </div>
               </div>
-              <div class="col-sm-6 text-right">
-                <p>Sort by:  Relevancy</p>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6 text-left">
+                    <p>All categories  “board games” (13,572 Results)</p>
+                  </div>
+                  <div class="col-sm-6 text-right">
+                    <p>Sort by:  Relevancy</p>
+                  </div>
+                </div>
               </div>
-            </div>
+
+            </section>
+            <section class="mn-sec-RightMid" id="searchResults">
+
+            </section>
+            <section class="mn-sec-RightBtm">
+
+            </section>
           </div>
         </div>
       </div>

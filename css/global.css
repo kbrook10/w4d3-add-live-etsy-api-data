@@ -49,6 +49,7 @@ img {
 
 .hr-nav-search {
   padding-top: 10px;
+  width: 300px;
 }
 
 .hr-nav-btn {
@@ -77,6 +78,11 @@ img {
   padding: 10px 15px;
 }
 
+.mn-sec {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
 .mn-sec-sideBar-top, .mn-sec-sideBar-btm {
   border: 1px solid #E1E3DF;
   border-radius: 5px;
@@ -86,8 +92,13 @@ img {
 }
 
 .mn-sec-sideBar-top li, .mn-sec-sideBar-btm li {
-  padding-top: 1.5px;
-  padding-bottom: 1.5px;
+  padding-top: 1.75px;
+  padding-bottom: 1.75px;
+  font-size: 90%;
+}
+
+.mn-sec-sideBar-top label, .mn-sec-sideBar-btm label {
+  font-size: 90%;
 }
 
 .mn-sec-sideBar-top a, .mn-sec-sideBar-btm a {
@@ -135,8 +146,23 @@ img {
   background-color: #FFFFFF;
 }
 
+.boxPrice {
+  width: 60px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.boxPriceButton {
+  width: 50px;
+}
+
 .mn-sec-searchArea {
   padding: 3px 15px;
+}
+
+.mn-sec-RightMid {
+  margin-top: 10px;
+  width: 75vw;
 }
 
 .card {
@@ -144,8 +170,8 @@ img {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   border: 1px solid lightgray;
-  margin-bottom: 30px;
-  width: 13vw;
+  margin: 5px;
+  width: 200px;
 }
 
 .card image {
@@ -159,10 +185,14 @@ img {
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  padding: 3px;
+  padding-left: 15px;
 }
 
 .cardTextBox {
-  padding: 10px;
-  margin-bottom: 5px;
+  padding-bottom: 20px;
+  margin: 5px;
+}
+
+.priceColor {
+  color: #78c042;
 }

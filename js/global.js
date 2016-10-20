@@ -81,21 +81,29 @@ function fetchEtsy(e){
       card.appendChild(cardTextBox)
 
       //Creates the row for the container of the two columns at the bottom of the card
-      var cardText = document.createElement('div')
-      cardText.classList.add('cardText')
-      cardTextBox.appendChild(cardText)
+      // var cardText = document.createElement('div')
+      // cardText.classList.add('cardText')
+      // cardTextBox.appendChild(cardText)
 
       //Creates the container for the seller information of the card on the left
       var cardColLeft = document.createElement('div')
-      cardColLeft.className = 'col-xs-6 text-muted small'
-      cardColLeft.innerHTML = item.Shop.shop_name
+      cardColLeft.className = 'col-xs-6 text-muted small cardTextBoxWidth'
+      // cardColLeft.innerHTML = item.Shop.shop_name
       cardTextBox.appendChild(cardColLeft)
+
+      var cardColRightText = document.createElement('p')
+      cardColRightText.innerHTML = item.Shop.shop_name
+      cardColLeft.appendChild(cardColRightText)
 
       //Creates the container for the price information of the card on the right
       var cardColRight = document.createElement('div')
-      cardColRight.className ='col-xs-6 text-right text-success small'
-      cardColRight.innerHTML = item.price
+      cardColRight.className ='col-xs-6 text-right text-success small priceColor'
+      // cardColRight.innerHTML = '$ ' + item.price
       cardTextBox.appendChild(cardColRight)
+
+      var cardColRightPrice = document.createElement('p')
+      cardColRightPrice.innerHTML = '$ ' + item.price
+      cardColRight.appendChild(cardColRightPrice)
 
       //Searches for the ID in the HTML and adds the card template function created
       document.querySelector('#searchResults').appendChild(col)
